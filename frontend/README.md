@@ -23,3 +23,12 @@ use any one of this depending upon what you are using.
 
 use any one of this depending upon what you are using.
 
+
+- Setting up NextUI :
+  - After installation of NextUI open tailwind.config.js file
+  - There inside plugins add "nextui()"
+ 
+- Setting up DaisyUI :
+  - After installation of DaisyUI open tailwind.config.js file
+  - There add daisyui inside "require()" -> require('daisyui')
+  - "require()" will already be present inside plugins.
