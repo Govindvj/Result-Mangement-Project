@@ -1,12 +1,13 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
         <div>
-            <div className="navbar bg-base-100">
+            <div className="navbar rounded-b-lg border-b-2 border-indigo-500 bg-base-100 shadow-[0_0px_30px_rgba(8,_112,_184,_0.7)]">
                 <div className="navbar-start">
                     <div className="dropdown">
-                        <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
+                        <div tabIndex={0} role="button" className="btn btn-circle">
                             {/*Hamburger icon */}
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -24,10 +25,11 @@ const Navbar = () => {
                         <ul
                             tabIndex={0}
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                            <li><a>Homepage</a></li>
-                            <li><a>About</a></li>
-                            <li><a>Contact</a></li>
-                            <li><a>Services</a></li>
+                            <li><Link to='/'>  Home </Link></li>
+                            <li><Link to='/about'> About </Link></li>
+                            <li><Link to='/contact'>  Contact </Link></li>
+                            <li><Link to='/profile'>  Profile </Link></li>
+                            <li><Link to='/service'>  Services </Link></li>
                         </ul>
                     </div>
                 </div>
@@ -57,7 +59,7 @@ const Navbar = () => {
                                 d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                         </svg>
                     </button>
-                    <a className="btn btn-primary"> <span>Sign up</span>/<span>Sign in</span> </a>
+                    <a className="btn btn-primary hover:shadow-[0_0px_30px_rgba(8,_112,_184,_0.7)]"> <span>Sign up</span>/<span>Sign in</span> </a>
                 </div>
             </div>
         </div>
